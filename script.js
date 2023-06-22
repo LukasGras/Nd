@@ -77,10 +77,14 @@ let taskAnswer = document.getElementById("submit")
 taskAnswer.addEventListener("click", function(){
     let numberans = document.getElementById("stork").valueAsNumber
     let storky = document.getElementById("ans-1")
+    let change = document.getElementById("change")
+
 
     if(numberans === 4){
+        change.src = "app/images/img-3.jpg"
         storky.innerText = "You Got It Right Yaaaaaaay!!!!"
     } else {
+        change.src = "app/images/img-4.jpg"
         storky.innerText = "Awwwwww Try Again ;( " 
     }
 })
