@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs FTW</title>
+  <link rel="icon" type="image/x-icon" href="app/images/gulp.svg">
+  <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body onload=" startTime()">
+  <h1>Tabs For The Win</h1>
+
+    <div class="buttons">
+        <button onclick="changeTab(event, 'time')" class="selected">Time</button>
+        <button onclick="changeTab(event, 'calc')">Simple Calculator</button>
+        <button onclick="changeTab(event, 'task')">Stork Task</button>
+    </div>
+    <section id="time" class="tab block animate">
+      <h2>Clock</h2>
+      <div id="clock"></div>
+      <p>A clock, or a timepiece,[1] is a device used to measure and indicate time. The clock is one of the oldest human inventions, meeting the need to measure intervals of time shorter than the natural units such as the day, the lunar month, and the year. Devices operating on several physical processes have been used over the millennia.</p>
+      <img src="/app/images/img-1.jpg" alt="clock">
+    </section>
+    <section id="calc" class="tab">
+        <div class="inputs">
+            <input id="sign" type="text" placeholder="Choose: + or - or * or /">
+            <input id="number1" type="number" placeholder="First Number">
+            <input id="number2" type="number" placeholder="Second number">
+        </div>
+        
+        <button id="abc" class="answer">Answer</button>
+        <h2>Answer is : <span id="ans">0</span> </h2>
+        <p>The first solid-state electronic calculator was created in the early 1960s. Pocket-sized devices became available in the 1970s, especially after the Intel 4004, the first microprocessor, was developed by Intel for the Japanese calculator company Busicom.</p>
+        <img src="/app/images/img-2.jpg" alt="calculator">
+    </section>
+    <section id="task" class="tab">
+      <h2>Complete Task</h2>
+      <p>If stork is standing on one leg he weighs 4kg. How much stork weighs standing on both legs ? </p>
+      <div class="give">
+        <input id="stork" type="number" placeholder="Kg????">
+        <button id="submit">Submit</button>
+      </div>
+      
+      <h3>Your answer is..... : <span id="ans-1"></span></h3>
+      <img src="app/images/img-3.jpg" alt="stork">
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
