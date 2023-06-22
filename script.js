@@ -84,7 +84,7 @@ taskAnswer.addEventListener("click", function(){
         change.src = "app/images/img-3.jpg"
         storky.innerText = "You Got It Right Yaaaaaaay!!!!"
     } else {
-        change.src = "app/images/img-4.jpg"
+        change.src = "../images/img-4.jpg"
         storky.innerText = "Awwwwww Try Again ;( " 
     }
 })
