@@ -81,10 +81,10 @@ taskAnswer.addEventListener("click", function(){
 
 
     if(numberans === 4){
-        change.src = "app/images/img-3.jpg"
+        // change.src = "app/images/img-3.jpg"
         storky.innerText = "You Got It Right Yaaaaaaay!!!!"
     } else {
-        change.src = "app/images/img-4.jpg"
+        // change.src = "app/images/img-4.jpg"
         storky.innerText = "Awwwwww Try Again ;( " 
     }
 })
